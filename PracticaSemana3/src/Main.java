@@ -14,6 +14,16 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Recursividad recu = new Recursividad();
+        
+        int[] array = {16,900,34,78,100};
+        
+        /*recu.recorrerArrayFor(array);
+        
+        System.out.println("=============POR RECURSIVIDAD==============");
+        recu.recorrerArrayRecursivo(array, 0);
+        */
+        int posMayor=recu.sacaPosmayorFor(array);
+        System.out.printf("Pos Mayor: %d\n", posMayor);
+        }   
     }
-    
-}
