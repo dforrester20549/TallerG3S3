@@ -22,8 +22,19 @@ public class Main {
         
         System.out.println("=============POR RECURSIVIDAD==============");
         recu.recorrerArrayRecursivo(array, 0);
-        */
+        
         int posMayor=recu.sacaPosmayorFor(array);
         System.out.printf("Pos Mayor: %d\n", posMayor);
+        */
+        int posM=recu.sacaPosmayor(array);
+        if(posM==-1){
+            System.out.println("[ERROR]; Array esta vacío.");
+        }else{
+            System.out.printf("Las Pos Mayor es: %d\n", posM);
+        }
+        
+        
+        
+        
         }   
     }

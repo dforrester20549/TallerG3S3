@@ -34,4 +34,22 @@ public class Recursividad {
         }
         return posM;
     }
+    
+    public int sacaPosmayor(int[]array){
+        if(array.length==0){
+            return -1;
+        }else{
+            return sacaPosmayorR (array, 0, array[0], 0);
+        }
+    }
+    
+    private int sacaPosmayorR(int[]array, int i, int posM, int temp){
+        if(i>=array.length){
+            return posM;
+        }else if(array[i]>temp){
+            return sacaPosmayorR(array, i+1, array[i], i);
+        }else{
+            return sacaPosmayorR(array, i+1, temp, posM);
+        }
+    }
 }
